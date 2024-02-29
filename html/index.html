@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/kt.js"></script>
+    <style>
+        /* Optional: Style for better presentation */
+        
+        .password-container {
+            position: relative;
+        }
+        
+        #password-toggle {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BIỂU THỨC CHÍNH QUY</h1>
+    <h2>TÊN NGƯỜI DÙNG</h2>
+    <input type="text" id="UserName" name="UserName">
+    <button onclick="ktUserName();">Kiểm tra</button><br>
+    <label id="kqUserName">Kết quả</label>
+
+    <h2>MẬT KHẨU NGƯỜI DÙNG</h2>
+    <div class="password-container">
+        <input type="password" id="Password" name="Password">
+        <span id="password-toggle" onclick="togglePasswordVisibility();">Show</span>
+        <button onclick="ktPassword();">Kiểm tra</button><br>
+        <label id="kqPassword">Kết quả</label>
+    </div>
+
+    <h2>EMAIL NGƯỜI DÙNG</h2>
+    <input type="text" id="email" name="email">
+    <button onclick="ktemail();">Kiểm tra</button><br>
+    <label id="kqemail">Kết quả</label>
+
+    <h2>ĐỊA CHỈ IPv4</h2>
+    <input type="text" id="IPv4" name="IPv4">
+    <button onclick="ktIPv4();">Kiểm tra</button><br>
+    <label id="kqIPv4">Kết quả</label>
+
+    <h2>HEX VALUE</h2>
+    <input type="text" id="Hex" name="Hex">
+    <button onclick="ktHex();">Kiểm tra</button><br>
+    <label id="kqHex">Kết quả</label>
+
+    <h2>MATCHING a SLUG</h2>
+    <input type="text" id="SLUG" name="SLUG">
+    <button onclick="ktSLUG();">Kiểm tra</button><br>
+    <label id="kqSLUG">Kết quả</label>
+
+    <h2>MATCHING a URL</h2>
+    <input type="text" id="URL" name="URL">
+    <button onclick="ktURL();">Kiểm tra</button><br>
+    <label id="kqURL">Kết quả</label>
+
+    <h2>MATCHING a HTML TAG</h2>
+    <input type="text" id="HTML" name="HTML">
+    <button onclick="ktHTML();">Kiểm tra</button><br>
+    <label id="kqHTML">Kết quả</label>
+
+
+
+
+</body>
+
+</html>
